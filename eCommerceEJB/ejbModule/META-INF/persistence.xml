@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="E-commerceEJB" transaction-type="JTA">
+	<jta-data-source>java:jboss/datasources/e-commerce</jta-data-source>
+	<class>com.midvi.entity.Product</class>
+	<class>com.midvi.entity.Category</class>
+	<class>com.midvi.entity.CartItem</class>
+	<class>com.midvi.entity.Role</class>
+	<class>com.midvi.entity.User</class>
+	<class>com.midvi.entity.Privilege</class>
+	<class>com.midvi.entity.ShoppingCart</class>
+	<class>com.midvi.entity.UserOrder</class>
+	<class>com.midvi.entity.Album</class>
+	<class>com.midvi.entity.Payment</class>
+	<class>com.midvi.entity.VirificationToken</class>
+	<class>com.midvi.entity.OrderDetail</class>
+		<properties>
+			
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL57Dialect"/>
+			<property name="org.hibernate.show_sql" value="true"/>
+			<property name="javax.persistence.database-minor-version" value="5.7"/>
+			<property name="javax.persistence.schema-generation.database.action" value="none"/>
+		
+		</properties>
+	</persistence-unit>
+</persistence>
